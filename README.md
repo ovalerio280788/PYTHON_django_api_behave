@@ -42,18 +42,26 @@ At this point we will have something like this in the virtualenv directory:
 api_django_behave_requests	bin				include				lib				pip-selfcheck.json
 ```
 
-### Install libraries for [Behave] and [Requests]
+### Install libraries to be able to run this demo project.
 Here we will use pip to install all the required libraries into the active virtual environment.
-In this case we have a requirements.txt file, that contain all the libraries needed to run this demo project.
+In this case we have a [requirements.txt] file, that contain all the libraries needed to run this demo project.
 ```ssh
-$ cd api_django_behave_requests
-$ pip install -r requirements.txt
+$ cd api_django_behave_requests     ## Move into the repository folder.
+$ pip install -r requirements.txt   ## To install libs into this file.
+$ pip freeze                        ## to see the installed libs.
 ```
 
-
+### Running the API application.
+Into the repository directory, execute the following command to generate the migrations for this demo proyect.
+```ssh
+$ ./manage.py migrate
+$ ./manage runserver
+```
+Now you van go to your favorite browser and open this url http://127.0.0.1:8000/ 
 
 [Python3]: <https://www.python.org/downloads/>
 [PIP]: <https://pip.pypa.io/en/stable/installing/>
 [VIRTUALENV]: <https://virtualenv.pypa.io/en/latest/>
 [BEHAVE]: <https://behave.readthedocs.io/en/latest/>
-[REQUESTS]: <>
+[REQUESTS]: <http://docs.python-requests.org/en/master/user/quickstart/>
+[requirements.txt]: <https://github.com/ovalerio280788/api_django_behave_requests/blob/master/requirements.txt>
