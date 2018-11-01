@@ -68,6 +68,13 @@ Here we are going to use behave to execute all the test cases we have in the rep
 $ behave zapi_testing/
 ```
 
+### References
+* https://www.python.org/downloads/
+* https://behave.readthedocs.io/en/latest/ 
+* http://docs.python-requests.org/en/master/user/quickstart/ 
+* http://allure.qatools.ru/
+
+
 [Python3]: <https://www.python.org/downloads/>
 [PIP]: <https://pip.pypa.io/en/stable/installing/>
 [VIRTUALENV]: <https://virtualenv.pypa.io/en/latest/>
