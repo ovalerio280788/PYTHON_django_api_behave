@@ -1,7 +1,7 @@
 # Api automation Behave + Requests!
 ## Pre-requisites
-We need to install the following tools as part or the pre-requisites to be able to run this demo.
-### Tech
+We need to install the following tools as part of the pre-requisites to be able to run this demo.
+### Tech.
 * [Python3] -- Python is a programming language that lets you work more quickly and integrate your systems more effectively.
     * Check the python version in this way, i.e
         ```ssh 
@@ -14,14 +14,14 @@ We need to install the following tools as part or the pre-requisites to be able 
         $ pip --version
         pip 18.1 from /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/pip (python 3.7)
         ```     
-### Install [VirtualEnv]
+### Install [VirtualEnv].
 For more deep information about VirtualEnv, click on the link above. But basically the idea with a virtual environment is to have an isolated environment where you can run your proyect with some specific tools versions. It allow us to have more than one environment in a single local machine.
 
 ```ssh
 pip install virtualenv
 ```
 
-### Creating a workspace
+### Creating a workspace.
 Lets create a new folder to start working and creating our local working environment.
 ```sh
 $ mkdir ~/demo_workspace            ## create a new folder in your favourite path
@@ -54,10 +54,19 @@ $ pip freeze                        ## to see the installed libs.
 ### Running the API application.
 Into the repository directory, execute the following command to generate the migrations for this demo proyect.
 ```ssh
-$ ./manage.py migrate
-$ ./manage runserver
+$ ./manage.py migrate       ## build the database
+$ ./manage runserver        ## Run the local server
+$ ./manage createsuperuser  ## Create a new user ovalerio/admin123 is used on tests
 ```
 Now you van go to your favorite browser and open this url http://127.0.0.1:8000/ 
+
+
+### Running all the existing test cases from terminal.
+Here we are going to use behave to execute all the test cases we have in the repository at this point.
+
+```ssh
+$ behave zapi_testing/
+```
 
 [Python3]: <https://www.python.org/downloads/>
 [PIP]: <https://pip.pypa.io/en/stable/installing/>
