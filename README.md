@@ -55,8 +55,8 @@ $ pip freeze                        ## to see the installed libs.
 Into the repository directory, execute the following command to generate the migrations for this demo proyect.
 ```ssh
 $ ./manage.py migrate       ## build the database
-$ ./manage runserver        ## Run the local server
-$ ./manage createsuperuser  ## Create a new user ovalerio/admin123 is used on tests
+$ ./manage.py runserver        ## Run the local server
+$ ./manage.py createsuperuser  ## Create a new user ovalerio/admin123 is used on tests
 ```
 Now you van go to your favorite browser and open this url http://127.0.0.1:8000/ 
 
