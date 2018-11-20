@@ -25,9 +25,9 @@ def before_tag(context, tag):
 
 
 def after_tag(context, tag):
-    if tag == "add_country":
+    if tag == "remove_user":
         context.execute_steps("""
-                When Add countries "{}"
+                When Delete users "{}"
             """.format(context.scenario.name))
 
 
