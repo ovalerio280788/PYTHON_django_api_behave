@@ -64,7 +64,7 @@ Into the repository directory, execute the following command to generate the mig
 ```ssh
 $ cd web
 $ python manage.py migrate                   ## build the database
-$ python manage createsuperuser              ## Create a new user ovalerio/admin123 is used on tests
+$ python manage.py createsuperuser           ## Create a new user ovalerio/admin123 is used on tests
 $ python manage.py runserver 0.0.0.0:9000    ## Run the local server
 ```
 Now you can go to your favorite browser and open this url http://127.0.0.1:9000/ 
