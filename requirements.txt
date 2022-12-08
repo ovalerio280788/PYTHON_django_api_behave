@@ -2,7 +2,7 @@ allure-behave==2.5.2
 allure-python-commons==2.5.2
 attrs==18.2.0
 behave==1.2.6
-certifi==2018.10.15
+certifi==2022.12.7
 chardet==3.0.4
 Django==2.1.11
 django-filter==2.0.0
